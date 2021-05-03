@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+nav{
+    height: 25px;
+    padding: 25px;
+    background-color: none;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.pagina{
+    width: 70%;
+    margin: 0 auto;
+}
+nav .pagina{
+    display: flex;
+    justify-content: space-between;
+}
+nav .pagina .nome{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+nav .pagina .icons{
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+}
+nav .pagina .icons a{
+    margin: 0 3px;
+    font-weight: normal;
+}
+nav .pagina .icons a:hover{
+    opacity: .8;
+}
+.inicio{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.inicio .pagina .titulo span{
+    color: #fff;
+    font-size: 48px;
+}
+.inicio .pagina .sobre p{
+    color: #fff;
+    margin-top: 200px;
+    line-height: 1.7;
+}
+.inicio .scroll{
+    color: #fff;
+    position: absolute;
+    bottom: 25px;
+}
+.inicio .scroll span{
+    position: absolute;
+    bottom: 30px;
+    font-size: 12px;
+    left: -20px;
+}
+.inicio .scroll i{
+    -webkit-animation: bounce .7s infinite alternate;
+}
+@keyframes bounce {
+    from {
+    transform: translateY(0px);
+    }
+    to {
+    transform: translateY(-5px);
+    }
+}
+@-webkit-keyframes bounce {
+    from {
+    transform: translateY(0px);
+    }
+    to {
+    transform: translateY(-5px);
+    }
+}
+.conteudo{
+    padding-bottom: 30px;
+}
+.conteudo .pagina .titulo{
+    color: #fff;
+    opacity: .7;
+    padding: 20px 0;
+}
+.conteudo .pagina .projetos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, max-content));
+    grid-gap: 105px;
+    justify-content: space-between;
+}
+.conteudo .pagina .projetos .projeto{
+    width: 300px;
+    margin: 10px;
+    position: relative;
+}
+.conteudo .pagina .projetos .projeto .view{
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 88px;
+    font-size: 10px;
+    top: 38%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+.conteudo .pagina .projetos .projeto:hover .imagem{
+    opacity: .2;
+}
+.conteudo .pagina .projetos .projeto:hover .view{
+    display: block;
+}
+.conteudo .pagina .projetos .projeto .imagem{
+    width: 100%;
+}
+.conteudo .pagina .projetos .projeto .repositorio{
+    color: #fff;
+    padding: 10px 5px 0px 10px;
+}
+.web{
+    background-color: #4F5D95;
+}
+.cs{
+    background-color: #178600;
+}
+.js{
+    background-color: #f1e05a;
+    color: #000;
+}
+.conteudo .pagina .projetos .projeto .repositorio .linguagem{
+    padding: 3px 5px 2px 5px;
+    border-radius: 5px;
+    float: right;
+    margin-top: -2px;
+    font-size: 12px;
+}
+.conteudo .pagina .projetos .projeto .repositorio .ano{
+    background-color: #eee;
+    color: #000;
+    padding: 3px 5px 2px 5px;
+    border-radius: 5px;
+    float: right;
+    margin-top: -2px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+.conteudo .pagina .projetos .projeto .descricao{
+    color: #fff;
+    padding: 5px 10px;
+    opacity: .5;
+    font-size: 12px;
+    line-height: 1.5;
+}
+main{
+    z-index: 2;
+    margin-bottom: 300px;
+    background-color: #1E1E1E;
+}
+footer{
+    position: fixed;
+    background-image: url(images/background-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 300px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+footer .pagina{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, max-content));
+    grid-gap: 105px;
+    justify-content: space-between;
+}
+footer .pagina .info{
+    width: 300px;
+    margin: 10px;
+    position: relative;
+}
+footer .pagina .info .titulo{
+    color: #fff;
+    margin-top: 80px;
+    opacity: .5;
+}
+footer .pagina .info .descricao{
+    color: #fff;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+footer .copy{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    font-size: 10px;
+    opacity: .5;
+}
